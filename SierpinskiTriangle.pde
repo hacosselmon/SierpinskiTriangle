@@ -1,19 +1,21 @@
 public void setup()
 {
   size(500,500);
-  background(255);
+  background(0);
 }
 public void draw()
 {
-  fill(90,230,190);
-  //stroke(90,230,190);
-  noStroke();
+  //fill(90,230,190);
+  noFill();
+  stroke(255);
+  //strokeWeight(5);
+  //noStroke();
   sierpinski(0,500,500);
 }
 public void mouseClicked()//optional
 {
   redraw();
-  background(255);
+  background(0);
   int ah = (int)(Math.random()*1000);
   sierpinski(0,500,ah);
 }
